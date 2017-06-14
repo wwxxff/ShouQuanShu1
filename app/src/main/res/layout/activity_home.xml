@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:text="退出"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_Back"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <ScrollView
+        android:padding="20dp"
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_Back">
+<LinearLayout
+    android:id="@+id/ScrollView_ll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_Front"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证信息（正面）"
+            android:textSize="15dp"
+            />
+
+        <Button
+            android:text="拍摄自动识别"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/button_Front"
+            android:background="#04f130"
+            android:textColor="#fff"
+            android:layout_alignBottom="@+id/TextView_Home_Front"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:layout_below="@id/TextView_Home_Front"
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/editText_gender"
+            android:hint="请确认信息无误"
+            android:layout_below="@+id/TextView_Home_prove"
+            android:layout_alignStart="@+id/editText_prove" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/editText_nation"
+            android:hint="请确认信息无误"
+            android:layout_below="@+id/editText_gender"
+            android:layout_alignStart="@+id/editText_gender"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/editText_Address"
+            android:hint="请确认信息无误"
+            android:layout_below="@+id/editText_nation"
+            android:layout_alignStart="@+id/editText_gender"
+            />
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通讯地址"
+            android:layout_alignBaseline="@+id/editText_Address"
+            android:layout_alignBottom="@+id/editText_Address"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_nation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="民族"
+            android:layout_alignBaseline="@+id/editText_nation"
+            android:layout_alignBottom="@+id/editText_nation"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别"
+            android:layout_above="@+id/editText_nation"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_prove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证号码"
+            android:layout_below="@+id/TextView_Home_name"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText_name"
+            android:hint="请确认信息无误"
+            android:layout_above="@+id/TextView_Home_prove"
+            android:layout_toEndOf="@+id/TextView_Home_prove"
+            android:layout_marginStart="14dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText_prove"
+            android:hint="请确认信息无误"
+            android:layout_above="@+id/editText_gender"
+            android:layout_alignStart="@+id/editText_name" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+        android:padding="10dp"
+        android:id="@+id/TextView_Home_Tail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="身份证信息（反面）"
+        android:textSize="15dp"
+        />
+
+    <Button
+        android:text="拍摄自动识别"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button_Tail"
+        android:background="#04f130"
+        android:textColor="#fff"
+        android:layout_alignBottom="@+id/TextView_Home_Tail" />
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_Organ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="证件签发机关"
+            android:layout_alignBottom="@+id/editText_Organ"
+            android:layout_alignParentStart="true" />
+        <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+            android:id="@+id/editText_Organ"
+        android:hint="请确认信息无误"
+            android:layout_below="@+id/TextView_Home_Tail"
+            android:layout_toEndOf="@+id/TextView_Home_Organ" />
+
+
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="证件有效期"
+            android:layout_below="@+id/TextView_Home_Organ"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:layout_below="@+id/editText_Organ"
+            android:layout_alignEnd="@+id/editText_period_start" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editText_period_start"
+            android:hint="2012.08"
+            android:layout_below="@+id/TextView_Home_Organ"
+            android:layout_toEndOf="@+id/TextView_Home_Organ" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editText_period_over"
+            android:hint="2017.08"
+            android:layout_alignBaseline="@+id/editText_period_start"
+            android:layout_alignBottom="@+id/editText_period_start"
+            android:layout_toEndOf="@id/TextView_Home_No" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:text="拍摄自动识别"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_number"
+            android:background="#04f130"
+            android:textColor="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/editText_number" />
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="授权证书编号"
+            android:textSize="15dp"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText_number"
+            android:hint="请确认信息无误"
+            android:layout_below="@+id/TextView_Home_number1"
+            android:layout_toEndOf="@+id/TextView_Home_number" />
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="授权证书编号"
+            android:layout_above="@+id/TextView_Home_phone"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码"
+            android:layout_below="@id/editText_number"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText_phone"
+            android:hint="请确认信息无误"
+            android:layout_below="@+id/TextView_Home_number"
+            android:layout_toEndOf="@+id/TextView_Home_number" />
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_Myphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本人手机"
+            android:layout_below="@id/editText_phone"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText_Myphone"
+            android:hint="请确认信息无误"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/editText_phone" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人像合影"/>
+        <ImageView
+            android:padding="10dp"
+            android:layout_below="@id/TextView_Home_portrait"
+            android:id="@+id/ImageView_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_front"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证正面"/>
+        <ImageView
+            android:padding="10dp"
+            android:layout_below="@id/TextView_Home_front"
+            android:id="@+id/ImageView_front"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_anti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证反面"/>
+        <ImageView
+            android:padding="10dp"
+            android:layout_below="@id/TextView_Home_anti"
+            android:id="@+id/ImageView_anti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_Authorize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="授权书"/>
+        <ImageView
+            android:padding="10dp"
+            android:layout_below="@id/TextView_Home_Authorize"
+            android:id="@+id/ImageView_Authorize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/TextView_Home_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请表"/>
+        <ImageView
+            android:padding="10dp"
+            android:layout_below="@id/TextView_Home_apply"
+            android:id="@+id/ImageView_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            />
+    </RelativeLayout>
+    <Button
+        android:background="#04f130"
+        android:textColor="#fff"
+        android:id="@+id/Button_home_present"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        />
+</LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:padding="5dp"
+        android:text="已上传"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_Query"
+        android:layout_above="@+id/ScrollView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="云丽信息上传系统"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
