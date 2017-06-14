@@ -18,7 +18,7 @@ public class MainActivity_Query extends AppCompatActivity {
     }
 
     private void initView() {
-        textView_Back = (TextView) findViewById(R.id.textView_Back);
+        textView_Back = (TextView) findViewById(R.id.textView_query_Back);
         ListView_query = (ListView) findViewById(R.id.ListView_query);
 
     }

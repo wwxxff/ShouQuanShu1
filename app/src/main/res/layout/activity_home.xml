@@ -9,7 +9,7 @@
         android:padding="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView_Back"
+        android:id="@+id/textView_home_Back"
         android:layout_alignParentStart="true"
         android:layout_marginTop="15dp" />
 
@@ -20,7 +20,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView_Back">
+        android:layout_below="@id/textView_home_Back">
 <LinearLayout
     android:id="@+id/ScrollView_ll"
     android:orientation="vertical"
